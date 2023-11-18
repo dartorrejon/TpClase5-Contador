@@ -5,6 +5,7 @@
 
 
   #root {
+    position: relative;
       height: 100dvh;     
       display: flex;
       flex-direction: column;
@@ -15,7 +16,15 @@
  
   @media screen and (max-width: 450px) {
     #root {
+      position: relative;
       height: 100dvh;
+      width: 100dvw;
+    }
+  }
+  @media screen and (min-width: 451px) and (max-width: 768px) {
+    #root {
+      position: relative;
+      height: 130dvh;
       width: 100dvw;
     }
   }
