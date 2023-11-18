@@ -8,10 +8,10 @@ const BotonContador = ({operacion, funcOperacion, paso, valor, limite}) => {
     return(
         <Button 
         onClick={manejarClick}
-        colorScheme="green"
+        bg='linear-gradient(180deg,  #256ea2 , #1b4f72 90%)'
+        color='#c8cfd0'
         size="lg"
-        mr="4"
-        mt="50px"
+        w={['80%','7%']}
         isDisabled={valor === limite}
         _hover={{ transform: 'scale(1.1)' }} 
         _active={{ transform: 'scale(0.9)' }}

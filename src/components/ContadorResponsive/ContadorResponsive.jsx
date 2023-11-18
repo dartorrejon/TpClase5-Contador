@@ -1,7 +1,8 @@
 import React from "react";
-import { chakra, Stack } from '@chakra-ui/react'
+import { chakra, Flex } from '@chakra-ui/react'
 import { useState } from "react";
 import BotonContador from "../BotonContador/BotonContador";
+import BotonReset from "../BotonReset/BotonReset";
 const ContadorResponsive = ({ sumar, restar }) => {
     let paso =1
     let limite = 10
@@ -21,8 +22,14 @@ const ContadorResponsive = ({ sumar, restar }) => {
             setCambiarValor(cambiarValor - paso)
     
     }   
-   
 }
+
+ const reset = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        setCambiarValor(0)
+    
+ }
 
 if(cambiarValor < -limite){
     setCambiarValor(-limite)
@@ -35,14 +42,19 @@ if(cambiarValor > limite){
 
     return (
         <>
-        <chakra.span style={{ fontFamily: 'Contador', fontSize: '10em', fontStyle: 'italic' }}>{cambiarValor}</chakra.span>
-        <Stack  direction={['column', 'row']} bg='yellowgreen' justify={['center','space-evenly']} >
-
+        <chakra.span
+        style={{ fontFamily: 'Contador', fontStyle: 'italic' }}
+        fontSize={['8em', '12em']}
+        textAlign='center'
+        color='#A2A0A0'
+        >{cambiarValor}</chakra.span>
+        <Flex direction={['column','row']} py={['20px','1em']} bg={['#1a1a1a','none']} justifyContent={['space-arround','space-evenly']}  alignItems={['center','center']} gap={['10px',null]}>
             <BotonContador operacion='-2' funcOperacion={disminuir} paso={2} valor={cambiarValor} limite={-limite}/>
             <BotonContador operacion={restar} funcOperacion={disminuir} paso={paso}valor={cambiarValor} limite={-limite}/>
+            <BotonReset valor={reset}/>
             <BotonContador operacion={sumar} funcOperacion={aumentar} paso={paso} valor={cambiarValor} limite={limite}/>
             <BotonContador operacion='+2' funcOperacion={aumentar} paso={2} valor={cambiarValor} limite={limite}/>
-        </Stack>
+        </Flex>
         </>
     )
 

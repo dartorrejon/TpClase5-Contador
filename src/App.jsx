@@ -1,20 +1,17 @@
 import React from "react"
-import { Box, chakra } from "@chakra-ui/react"
+
 import Main from "./components/Main/Main"
-import './App.css' 
+import './App.css'
+import Header from "./components/Header/Header" 
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
   return (
     <>
-      <Box 
-      bg='red.100'
-      h='10dvh' 
-      display='grid' 
-      placeContent='center'
-      >hola mundo</Box>
+      <Header/>
       <Main />
-      <chakra.footer h='10dvh' bg='green.200'>Yo soy el footer</chakra.footer>
+      <Footer/>
     </>
   )
 }
