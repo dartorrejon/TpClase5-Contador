@@ -11,8 +11,9 @@ const Footer = () => {
         justifyContent='space-between'
         alignItems='center'
         color='white' 
-        bg={['#1a1a1a','transparent','#1a1a1a','none']} 
-        h={['12vh','22vh','80px',"auto"]}
+        bg={['#1a1a1a','transparent','none','none']} 
+        mt={4}
+        h={['12vh','22vh','70px',"auto"]}
         width='100dvw'
         px={['10px','20px','20px','40px']}
         py={['10px','20px']}
@@ -20,8 +21,7 @@ const Footer = () => {
         fontFamily="'Roboto', sans-serif;">
             <Redes/>
             <Text 
-            fontSize='.9em'
-            fontStyle='italic'>
+            fontSize={['.9em','.8em','.9em','.95em']}            fontStyle='italic'>
             ©️DartoDev 2023 - Argentina Progama 4.0
             </Text>
             </Box>

@@ -10,7 +10,7 @@ const Header = () => {
             px={[5,10]}
             py={[null,'20px']}
             as='header'
-            h={['15dvh','20dvh','20dvh','15dvh']}
+            h={['12.5dvh','20dvh','24dvh','15dvh']}
             bg='#1a1a1a'
         >
             <Image

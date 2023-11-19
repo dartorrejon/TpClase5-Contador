@@ -45,19 +45,19 @@ const ContadorResponsive = ({ sumar, restar }) => {
         <Flex
         direction='column' 
         justifyContent={["space-around",null,null, 'space-between']}
-        h={['70dvh','270px','320px','400px']}
+        h={['70dvh','270px','300px','400px']}
         py={[5,5,'20px',5]}>
         
             <Flex
             direction='column' 
             alignItems='center' 
             justifyContent='space-around'
-            py={['1em', '1em','1.5em','4em']} 
+            py={['1em', '1em','1em','4em']} 
             color={(Math.abs(cambiarValor) != limite)?'#A2A0A0':'red'}>
                 <chakra.span 
-                lineHeight={['1em', '1em', '1em', '1em']}
+                lineHeight={['1em', '1em', '1em', '.8em']}
                 style={{ fontFamily: 'Contador', fontStyle: 'italic' }}
-                fontSize={['8.5em', '8em', '9em', '22em']}
+                fontSize={['8.5em', '8em', '9.5em', '22em']}
                 textAlign='center'
                 >{cambiarValor}</chakra.span>
                 <Limite limite={limite} valor={cambiarValor}/>
