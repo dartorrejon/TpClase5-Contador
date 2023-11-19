@@ -4,30 +4,22 @@
   
 
 
-  #root {
-    position: relative;
-      height: 100dvh;     
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
-      background-color: #121212;
-      font-family: 'Anton', sans-serif;
+#root{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: #121212;
+  font-family: 'Anton', sans-serif;
+}
+
+@media screen and  (max-width: 768px) {
+  #root{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
   }
- 
-  @media screen and (max-width: 450px) {
-    #root {
-      position: relative;
-      height: 100dvh;
-      width: 100dvw;
-    }
-  }
-  @media screen and (min-width: 451px) and (max-width: 768px) {
-    #root {
-      position: relative;
-      height: 130dvh;
-      width: 100dvw;
-    }
-  }
+}
 
 
   

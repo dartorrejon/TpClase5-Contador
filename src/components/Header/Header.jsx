@@ -10,13 +10,13 @@ const Header = () => {
             px={[5,10]}
             py={[null,'20px']}
             as='header'
-            h={['15dvh','20dvh','15dvh']}
+            h={['15dvh','20dvh','20dvh','15dvh']}
             bg='#1a1a1a'
         >
             <Image
                 src={reloj}
                 alt='contador'
-                width={['4em','4em']}
+                width={['4em','4em','4.5em','6em']}
                  />
             <Box as='h1' color='#c8cfd0' fontSize={['3em','3em','4em']} textTransform='uppercase' fontStyle='italic'>Contador</Box>
         </Box>
