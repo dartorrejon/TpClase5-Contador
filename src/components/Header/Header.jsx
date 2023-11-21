@@ -8,7 +8,7 @@ const Header = () => {
             alignItems='center'
             gap={10}
             px={[5,10]}
-            py={[null,'20px']}
+            py={['5px','5px','5px','20px']}
             as='header'
             h={['12.5dvh','20dvh','20dvh','15dvh']}
             bg='#1a1a1a'

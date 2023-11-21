@@ -4,7 +4,7 @@ import { useState } from "react";
 import BotonContador from "../BotonContador/BotonContador";
 import BotonReset from "../BotonReset/BotonReset";
 import Limite from "../Limite/Limite";
-const ContadorResponsive = ({ sumar, restar }) => {
+const ContadorResponsive = () => {
     let paso = 1
     let limite = 50
     const [cambiarValor, setCambiarValor] = useState(0)
@@ -44,23 +44,21 @@ const ContadorResponsive = ({ sumar, restar }) => {
     return (
         <Flex
         direction='column' 
-        justifyContent={["space-around",null,null, 'space-between']}
-        h={['70dvh','70dvh','65dvh','400px']}
-        py={[5,5,'20px',5]}
-        my={['10px','10px','20px','20px']}
+        justifyContent={["space-around",'space-evenly','space-evenly', 'space-between']}
+        h={['100%','100%','100%','100%']}
+        py={[5,5,'10px',5]}
+        my={['10px','10px','10px','20px']}
         >
-            
-        
             <Flex
             direction='column' 
             alignItems='center' 
             justifyContent='space-around'
-            py={['1em', '1em','1em','4em']} 
+            py={['0em', '0em','0em','4em']} 
             color={(Math.abs(cambiarValor) != limite)?'#A2A0A0':'red'}>
                 <chakra.span 
                 lineHeight={['1em', '1em', '1em', '.8em']}
                 style={{ fontFamily: 'Contador', fontStyle: 'italic' }}
-                fontSize={['8.5em', '8em', '9.5em', '22em']}
+                fontSize={['8.5em', '8em', '10em', '22em']}
                 textAlign='center'
                 >{cambiarValor}</chakra.span>
                 <Limite limite={limite} valor={cambiarValor}/>
@@ -79,14 +77,14 @@ const ContadorResponsive = ({ sumar, restar }) => {
                 valor={cambiarValor} 
                 limite={-limite} />
                 <BotonContador 
-                operacion={restar} 
+                operacion='-1' 
                 funcOperacion={disminuir} 
                 paso={paso} 
                 valor={cambiarValor} 
                 limite={-limite} />
                 <BotonReset valor={reset} />
                 <BotonContador 
-                operacion={sumar} 
+                operacion='+1'
                 funcOperacion={aumentar} 
                 paso={paso} 
                 valor={cambiarValor} 
