@@ -3,7 +3,7 @@ import { chakra } from "@chakra-ui/react";
 const RedSocial = ({link, clase, nombre}) => {
     return (
         <chakra.a 
-        fontSize={['1.5em','1.5em','2.5em']}
+        fontSize={['1.5em','1.5em','1.8em','2.5em']}
         href={link} 
         target="_blank" 
         title={nombre}

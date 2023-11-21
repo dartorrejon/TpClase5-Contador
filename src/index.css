@@ -5,7 +5,7 @@
 
 
 #root{
-  height: auto;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -13,12 +13,15 @@
   font-family: 'Anton', sans-serif;
 }
 
-@media screen and  (max-width: 768px) {
+@media screen and  (max-width: 950px) {
   #root{
+    height: auto;
     display: flex;
     flex-direction: column;
     align-content: space-between;
   }
+  body{
+  height: auto;}
 }
 
 

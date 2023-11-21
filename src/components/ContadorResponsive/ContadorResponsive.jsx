@@ -6,7 +6,7 @@ import BotonReset from "../BotonReset/BotonReset";
 import Limite from "../Limite/Limite";
 const ContadorResponsive = ({ sumar, restar }) => {
     let paso = 1
-    let limite = 100
+    let limite = 50
     const [cambiarValor, setCambiarValor] = useState(0)
 
 
@@ -45,8 +45,11 @@ const ContadorResponsive = ({ sumar, restar }) => {
         <Flex
         direction='column' 
         justifyContent={["space-around",null,null, 'space-between']}
-        h={['70dvh','270px','300px','400px']}
-        py={[5,5,'20px',5]}>
+        h={['70dvh','70dvh','65dvh','400px']}
+        py={[5,5,'20px',5]}
+        my={['10px','10px','20px','20px']}
+        >
+            
         
             <Flex
             direction='column' 

@@ -8,20 +8,20 @@ const Footer = () => {
         as='footer'
         display='flex'
         flexDir={['column','column','row-reverse','row-reverse']}
-        justifyContent='space-between'
+        justifyContent={['space-evenly','space-between']}
         alignItems='center'
         color='white' 
-        bg={['#1a1a1a','transparent','none','none']} 
-        mt={4}
-        h={['12vh','22vh','70px',"auto"]}
+        bg={['#1a1a1a','1a1a1a','1a1a1a','none']} 
+        h={['12vh','18dvh','15dvh',"auto"]}
+        mt={['0px','10px','10px','20px']}
         width='100dvw'
         px={['10px','20px','20px','40px']}
-        py={['10px','20px']}
-        pb='20px'
+        py={['10px','10px','10px','20px']}
+        
         fontFamily="'Roboto', sans-serif;">
             <Redes/>
             <Text 
-            fontSize={['.9em','.8em','.9em','.95em']}            fontStyle='italic'>
+            fontSize={['.9em','.8em','.8em','.95em']}            fontStyle='italic'>
             ©️DartoDev 2023 - Argentina Progama 4.0
             </Text>
             </Box>
