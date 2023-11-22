@@ -9,7 +9,9 @@ const Limite = ({ limite, valor }) => {
         color={(Math.abs(valor) == limite)?'red':'white'}>Limite:  <Text 
                                                                     as='span'  
                                                                     verticalAlign='super' 
-                                                                    textDecoration='underline'>+</Text> {limite}
+                                                                    textDecoration='underline'>+</Text>
+                                                                    <Text as ='span'
+                                                                    fontSize='1.2em'> {limite}</Text>
         </Text>
     )
 }
